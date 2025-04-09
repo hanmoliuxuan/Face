@@ -6,34 +6,34 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
-    <height>693</height>
+    <width>938</width>
+    <height>838</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QTabWidget" name="tabWidget">
+  <widget class="QTabWidget" name="maintab">
    <property name="enabled">
     <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>450</y>
-     <width>640</width>
-     <height>221</height>
+     <x>30</x>
+     <y>460</y>
+     <width>881</width>
+     <height>341</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QTabBar::tab{width:100}
-QTabBar::tab{height:30}</string>
+QTabBar::tab{height:50}</string>
    </property>
    <property name="tabPosition">
     <enum>QTabWidget::TabPosition::North</enum>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>4</number>
    </property>
    <property name="iconSize">
     <size>
@@ -51,30 +51,19 @@ QTabBar::tab{height:30}</string>
     <widget class="QPushButton" name="check">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>40</y>
-       <width>341</width>
-       <height>91</height>
+       <x>320</x>
+       <y>60</y>
+       <width>311</width>
+       <height>131</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>26</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>识别</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="showface">
-     <property name="geometry">
-      <rect>
-       <x>350</x>
-       <y>10</y>
-       <width>271</width>
-       <height>151</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string/>
      </property>
     </widget>
    </widget>
@@ -85,9 +74,9 @@ QTabBar::tab{height:30}</string>
     <widget class="QPushButton" name="add">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>630</width>
+       <x>160</x>
+       <y>130</y>
+       <width>621</width>
        <height>50</height>
       </rect>
      </property>
@@ -101,51 +90,61 @@ QTabBar::tab{height:30}</string>
       <string>录入</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="name">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>120</x>
-       <y>30</y>
-       <width>113</width>
-       <height>20</height>
+       <x>170</x>
+       <y>50</y>
+       <width>601</width>
+       <height>51</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QLineEdit" name="id">
-     <property name="geometry">
-      <rect>
-       <x>370</x>
-       <y>30</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>30</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>姓名：</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>290</x>
-       <y>30</y>
-       <width>50</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>学号：</string>
-     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>姓名：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="name">
+        <property name="maximumSize">
+         <size>
+          <width>111111</width>
+          <height>111111</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>学号：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="id">
+        <property name="maximumSize">
+         <size>
+          <width>111111</width>
+          <height>1111111</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QWidget" name="tab_3">
@@ -157,10 +156,296 @@ QTabBar::tab{height:30}</string>
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>630</width>
-       <height>181</height>
+       <width>951</width>
+       <height>231</height>
       </rect>
      </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>用户管理</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>471</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>学号：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="find_id">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1999</width>
+          <height>1000</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="find">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>69</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>查找</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>471</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>学号：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="u_id">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>11111</width>
+          <height>11111</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>姓名:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="u_name">
+        <property name="maximumSize">
+         <size>
+          <width>111111</width>
+          <height>111111</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTableView" name="user_list">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>10</y>
+       <width>441</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>481</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QPushButton" name="update_name">
+        <property name="maximumSize">
+         <size>
+          <width>8888</width>
+          <height>8888</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>更新姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="update_id">
+        <property name="maximumSize">
+         <size>
+          <width>11111</width>
+          <height>1111</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>更新学号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="update_ph">
+        <property name="maximumSize">
+         <size>
+          <width>11111</width>
+          <height>11111</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>更新照片</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="del_user">
+        <property name="maximumSize">
+         <size>
+          <width>1111</width>
+          <height>1111</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>删除用户</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>数据统计</string>
+    </attribute>
+    <widget class="QLabel" name="draw">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>811</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>管理员登录</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>80</y>
+       <width>521</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>密码：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="admin_pass">
+        <property name="maximumSize">
+         <size>
+          <width>111111</width>
+          <height>11111</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="admin_login">
+        <property name="maximumSize">
+         <size>
+          <width>11111</width>
+          <height>11111</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>登录</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exit">
+        <property name="maximumSize">
+         <size>
+          <width>11111</width>
+          <height>11111</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
   </widget>
@@ -168,9 +453,9 @@ QTabBar::tab{height:30}</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>20</y>
-     <width>640</width>
-     <height>380</height>
+     <y>10</y>
+     <width>901</width>
+     <height>451</height>
     </rect>
    </property>
    <property name="styleSheet">
